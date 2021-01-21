@@ -1,0 +1,4 @@
+---
+# handlers file for containerd
+- name: restart containerd
+  service: name=containerd state=restarted
