@@ -15,3 +15,5 @@
 - name: Generate a containerd config.
   shell: containerd config default > /etc/containerd/config.toml
   notify: restart containerd
+
+- include_tasks: crictl.yml
